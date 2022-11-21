@@ -1,0 +1,9 @@
+
+Images
+bg1.jpg retrieved from https://brightstarmusical.com/how-to-be-successful-in-music/
+bg2.jpg retrieved from https://hdqwalls.com/music-melody-abstract-4k-wallpaper
+bg3.jpg retrieved from https://wallpapersmug.com/w/download/3840x2400/girl-dream-music-guitar-night-city-4k-612c46
+bg4.jpg retrieved from https://unsplash.com/s/photos/vinyl-record
+
+Music Player: copy from https://github.com/jackzhang1204/sewise-player
+

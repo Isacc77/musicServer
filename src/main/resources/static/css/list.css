@@ -1,0 +1,54 @@
+
+.form-group {
+    color: #fff;
+}
+
+.success {
+    background-color: white;
+}
+
+.container .background {
+    height: 100%;
+    width: 100%;
+    /*padding-top: 300px;*/
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#title {
+    text-align: center;
+    color: #66afe9;
+    font-family: Algerian;
+}
+
+#body {
+    background-image: url("../images/bg2.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#exampleInputName2 {
+    border-radius: 15px;
+}
+
+#submit1 {
+    background-color: slateblue;
+    border-radius: 15px;
+}
+
+#FL {
+    background-color: darkred;
+    border-radius: 15px;
+}
+
+#upload {
+    background-color: slateblue;
+    border-radius: 15px;
+}
+
+#delete {
+    background-color: slateblue;
+    border-radius: 15px;
+}
+

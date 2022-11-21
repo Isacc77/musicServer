@@ -1,0 +1,20 @@
+#body {
+    background-image: url("../images/bg4.jpg");
+    background-size: 95%;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    border-radius: 35px;
+}
+
+#home {
+    margin-left: 40px;
+}
