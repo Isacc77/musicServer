@@ -25,6 +25,11 @@ CREATE TABLE `lovemusic` (
 `music_id` int(11) NOT NULL
 );
 
+INSERT INTO user(username,password)
+VALUES("bob","$2a$10$Bs4wNEkledVlGZa6wSfX7eCSD7wRMO0eUwkJH0WyhXzKQJrnk85li");
+
+INSERT INTO user(username,password)
+VALUES("test","123");
 
 select m.*
 from favouritemusic f, music m
