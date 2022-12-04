@@ -9,7 +9,6 @@ CREATE TABLE `user` (
 `password` varchar(255) NOT NULL
 );
 
-
 CREATE TABLE `music` (
 `id` int PRIMARY KEY AUTO_INCREMENT,
 `title` varchar(50) NOT NULL,
@@ -19,7 +18,7 @@ CREATE TABLE `music` (
 `userid` int(11) NOT NULL
 );
 
-CREATE TABLE `lovemusic` (
+CREATE TABLE `favouritemusic` (
 `id` int PRIMARY KEY AUTO_INCREMENT,
 `user_id` int(11) NOT NULL,
 `music_id` int(11) NOT NULL

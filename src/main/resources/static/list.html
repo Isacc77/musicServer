@@ -36,7 +36,6 @@
                     for (var i = 0; i < data.length; i++) {
                         var musicUrl = data[i].url + ".mp3";
                         console.log(musicUrl);
-
                         s += '<tr>';
                         s += '<th > <input id= "' + data[i].id + '" type="checkbox"> </th>';
                         s += '<td>' + data[i].title + '</td>';
@@ -50,7 +49,6 @@
                 }
             })
         }
-
         function playerSong(obj) {
             var name = obj.substring(obj.lastIndexOf("=") + 1);
             //obj: the address of the music to be played

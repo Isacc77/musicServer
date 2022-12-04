@@ -71,7 +71,7 @@ public class MusicController {
 
         System.out.println("fileNameAndType: " + fileNameAndType);
 
-        String path = SAVE_PATH + fileNameAndType;
+        String path = SAVE_PATH +"/"+fileNameAndType;
 
         File dest = new File(path);
 
