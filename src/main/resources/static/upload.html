@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="css/upload.css">
-</head>
-<body id="body">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta name="viewport"
+              content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="css/upload.css">
+    </head>
 
-<div class="container">
-    <!--enctype="multipart/form-data"-->
-    <form method="POST" enctype="multipart/form-data" action="/music/upload">
-        Music upload：<input type="file" name="filename"/>
-        Singer name: <label>
-        <input type="text" name="singer" placeholder="Please enter singer name"/>
-    </label>
-        <input type="submit" value="upload"/>
-    </form>
+    <body id="body">
+        <div class="container">
+            <!--enctype="multipart/form-data"-->
+            <form method="POST" enctype="multipart/form-data" action="/music/upload">
+                Music upload：<input type="file" name="filename"/>
+                Singer name: <label>
+                <input type="text" name="singer" placeholder="Please enter singer name"/>
+            </label>
+                <input type="submit" value="upload"/>
+            </form>
 
-    <div id="home">
-        <a class="btn btn-primary" href="list.html">Home</a>
-    </div>
-
-</div>
-
-
-</body>
+            <div id="home">
+                <a class="btn btn-primary" href="list.html">Home</a>
+            </div>
+        </div>
+    </body>
 </html>

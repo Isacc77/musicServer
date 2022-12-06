@@ -29,7 +29,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/music")
-
 public class MusicController {
     @Value("${music.local.path}")
     private String SAVE_PATH;

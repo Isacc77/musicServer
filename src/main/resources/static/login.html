@@ -7,7 +7,7 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Music player login page</title>
-
+    <link rel="stylesheet" href="css/login.css">
     <!-- 1. Import CSS styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- 2. Import jQuery-->
@@ -16,44 +16,8 @@
     <!-- 3. Import bootstrap -->
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script type="text/javascript"></script>
-    <style>
-        #body {
-            background-image: url("images/bg1.jpg");
-            /*background-size:100% 100%;
-            background-attachment: fixed;*/
-        }
-    </style>
-    <script>
-        <!-- core logic -->
-        $(function () {
-            $("#submit").click(function () {
-                var username = $("#user").val();
-                var password = $("#password").val();
-                if (username.trim() == "" || password.trim() == "") {
-                    alert("Username and password cannot be empty");
-                    return;
-                }
-                //execute asynchronous ajax http request
-                $.ajax({
-                    url: "/user/login",
-                    data: {"username": username, "password": password},
-                    type: "POST",
-                    dataType: "json",
-                    success: function (data) {
-                        console.log(data);
-                        if (data.status == 0) {
-                            alert("login successfully");
-                            window.location.href = "list.html";
-                        } else {
-                            alert("username or password incorrect!");
-                            $("#user").val("");
-                            $("#password").val("");
-                        }
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="js/login.js"></script>
+
 </head>
     <body id="body">
         <div class="container"
@@ -75,9 +39,17 @@
                        id="submit" class="btn btn btn-primary"
                        type="button" value="login">
             </div>
-            <div class="author-info" style="text-align: right;">
-                <label for="user">Author: Isaac Lee</label>
+            <div class="author-info" style="text-align: left;">
+                <label for="user">Author: Isaac Lee  ---- </label>
+                <a href="https://github.com/Isacc77/musicServer" > GitHub Source code</a>
             </div>
         </div>
+
+        <div id="piano" style="width: 1px; height: 1px;">
+            <h1>
+                <a style="color: rgb(225,156,7)" href="piano/piano.html">*</a>
+            </h1>
+        </div>
+
     </body>
 </html>

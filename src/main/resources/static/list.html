@@ -118,9 +118,9 @@
         function loveInfo(obj) {
             $.ajax({
                 url: "/favouritemusic/myfavourite",
+                type: "POST",
                 data: {"id": obj},
                 dataType: "json",
-                type: "POST",
 
                 success: function (val) {
                     if (val.data == true) {
@@ -132,7 +132,6 @@
                 }
             });
         }
-
     </script>
 </head>
 
@@ -150,7 +149,7 @@
     </div>
 
     <div style="float: right;margin-bottom: 15px">
-        <a id="FL" class="btn btn-primary" href="loveMusic.html">Favourite List</a>
+        <a id="FL" class="btn btn-primary" href="favouriteMusic.html">Favourite List</a>
         <a id="upload" class="btn btn-primary" href="upload.html">Upload</a>
         <a id="delete" class="btn btn-primary">Delete selected</a>
     </div>

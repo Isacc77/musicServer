@@ -27,6 +27,9 @@ public class AppConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/player/**")
                 .excludePathPatterns("/login.html")
                 //exclude login socket
-                .excludePathPatterns("/user/login");
+                .excludePathPatterns("/user/login")
+                .excludePathPatterns("/piano/**")
+                //exclude test socket
+                .excludePathPatterns("/test/method");
     }
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Favourite music page</title>
+    <link rel="shortcut icon" href="#"/>
+    <link rel="stylesheet" href="css/favouriteMusic.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/favouriteMusic.js"></script>
+
+    <style type="text/css">
+        td, th {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body id="body">
+<div class="container">
+    <h3 id = "title" style="text-align: center">My favourite music list</h3>
+    <div style="float: left;">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">Search song: </label>
+                <input name="name" type="text" class="form-control" id="exampleInputName2">
+            </div>
+            <button id="submit1" type="button" class="btn btn-default">Confirm</button>
+        </form>
+    </div>
+    <div style="float: right;margin-bottom: 15px">
+        <a id = "home" class="btn btn-primary" href="list.html">Home</a>
+    </div>
+
+    <div class="background">
+        <table border="1" class="table table-bordered table-hover">
+            <tr class="success">
+                <th>Name</th>
+                <th>Singer</th>
+                <th>Play</th>
+                <th>Operation</th>
+            </tr>
+            <tbody id="info" valign="middle">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+<!--Music Player: copy from https://github.com/jackzhang1204/sewise-player -->
+<div style="width: 180px; height: 140px; position:absolute; bottom:10px; right:10px">
+    <script type="text/javascript" src="player/sewise.player.min.js"></script>
+    <script type="text/javascript">
+        SewisePlayer.setup({
+            server: "vod",
+            type: "mp3",
+            videourl: "http://jackzhang1204.github.io/materials/where_did_time_go.mp3",
+            skin: "vodWhite",
+            autostart: "false",
+        });
+    </script>
+</div>
+</html>
